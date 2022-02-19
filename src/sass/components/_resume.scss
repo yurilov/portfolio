@@ -195,11 +195,34 @@ body {
 }
 
 .contacts-section-link {
-  color: #565e6a;
+  color: #ffffff;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 24px;
+  transition: color $transition-duration $timing-function;
+
+  &:hover,
+  &:focus {
+    color: #fb6d3a;
+  }
+}
+.contacts-section-icon {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contacts__icon {
+  width: 15px;
+  height: 15px;
+  fill: #fff;
+  transition: fill $transition-duration $timing-function;
+
+  .contacts-section-link:hover &,
+  .contacts-section-link:focus & {
+    fill: #fb6d3a;
+  }
 }
 
 .sidebar-list {
